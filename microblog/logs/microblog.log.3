@@ -1,4 +1,4 @@
-2019-08-28 13:06:10,759 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
+2019-08-28 13:39:56,799 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -17,7 +17,7 @@ Traceback (most recent call last):
   File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 135, in explore
     posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-08-28 13:06:18,535 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
+2019-08-28 13:39:58,524 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -36,7 +36,10 @@ Traceback (most recent call last):
   File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 135, in explore
     posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-08-28 13:06:32,842 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
+2019-08-28 13:40:28,510 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:40:48,812 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:41:20,972 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:41:24,854 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -55,7 +58,8 @@ Traceback (most recent call last):
   File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 135, in explore
     posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-08-28 13:06:36,442 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
+2019-08-28 13:44:02,920 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:44:06,206 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -74,8 +78,28 @@ Traceback (most recent call last):
   File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 135, in explore
     posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-08-28 13:07:54,016 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
-2019-08-28 13:07:56,905 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
+2019-08-28 13:44:08,874 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 135, in explore
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2019-08-28 13:44:55,008 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:45:29,431 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:45:34,636 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -94,23 +118,4 @@ Traceback (most recent call last):
   File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 136, in explore
     page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-08-28 13:39:24,584 ERROR: Exception on /explore [GET] [in d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\myproject\education_proj\education_flask\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\myProject\education_proj\app\flask\microblog\app\routes.py", line 136, in explore
-    return render_template('index.html', title='Explore', posts=posts.items)
-KeyError: 'POSTS_PER_PAGE'
-2019-08-28 13:39:51,521 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
+2019-08-28 13:46:19,167 INFO: Microblog startup [in D:\myProject\education_proj\app\flask\microblog\app\__init__.py:44]
